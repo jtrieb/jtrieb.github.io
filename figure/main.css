@@ -1,2 +1,11 @@
-#a1 { fill: orange !important }
-#b7 { fill: orange !important }
+#figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.interactive {
+    cursor: pointer;
+}
