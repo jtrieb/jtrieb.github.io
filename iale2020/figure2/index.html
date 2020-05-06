@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<script src="https://d3js.org,d3.v4.min.js"></script>
 <html>
 <head>
     <title>ES Methods</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<script src="https://d3js.org,d3.v4.min.js"></script>
 <object class="methods" data="methods.svg" type="image/svg+xml"></object>
+<script type="text/javascript">//<![CDATA[
+    d3.selectAll("g").on("mouseover", function(){
+        d3.select(this).raise()
+    });
+    
+    //]]></script>
 </body>
     
 </html>
