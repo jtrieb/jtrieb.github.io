@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<script>
+var gameId;    
+
+function showHide(id) {
+    var e = document.getElementById(id)
+    if (e.style.display === "none") {
+        e.style.display = "block";
+    } else {
+        e.style.display = "none";
+        }
+    }
+    
+function randGen(n, len) {
+    for (var i = 0; i < n; i++) {
+        var val = Math.floor(Math.random()*Math.pow(10,(len-1)));
+        var selection = document.createElement("BUTTON");
+        selection.innerHTML = val;
+        selection.onclick = function(){displayChoice(this.innerHTML)};
+        selection.id="selection'+i+'";
+        document.getElementById("selections").appendChild(selection);
+        }
+    }
+//function randGen(n, len) {
+//    var val = Math.floor(Math.random()*Math.pow(10,(len-1)));
+//    document.getElementById("selection1").innerHTML = val
+//    }
+
+function newGame(){
+    showHide("choices");
+    randGen(3, 6);
+    gameIdGen();
+}
+    
+function displayChoice(val) {
+    document.getElementById("selection").innerHTML = val;
+    document.getElementById("selection").style.fontSize = "48px";
+    document.getElementById("selection").style.color = "blue";
+    }
+
+function gameIdGen(){
+    gameId = Math.floor(Math.random()*1000000);
+    document.getElementById("showGameId").innerHTML = "Game ID: " + gameId;
+    }
+
+function broadcastValue(id, value) {
+    
+}
+</script>
+    
+<h2>Koikoi test</h2>
+  
+<div id="choices">
+<button type="button"
+        id="b_new"
+        onclick="newGame()">
+    New game</button>
+<button type="button"
+        id="b.existing"
+        onclick="showHide('selections')">
+    Join existing game</button>
+</div>
+    
+<div>
+<p id="showGameId">xx</p>
+    </div>
+    
+<div id="selections">
+</div>
+    
+<div id="display">
+    <p id="selection"></p>
+</div>
+    
+</body>
+</html>
