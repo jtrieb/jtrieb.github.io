@@ -1,55 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-    
-<script>
-var gameId;    
 
-function showHide(id) {
-    var e = document.getElementById(id)
-    if (e.style.display === "none") {
-        e.style.display = "block";
-    } else {
-        e.style.display = "none";
-        }
-    }
-    
-function randGen(n, len) {
-    for (var i = 0; i < n; i++) {
-        var val = Math.floor(Math.random()*Math.pow(10,(len-1)));
-        var selection = document.createElement("BUTTON");
-        selection.innerHTML = val;
-        selection.onclick = function(){displayChoice(this.innerHTML)};
-        selection.id="selection'+i+'";
-        document.getElementById("selections").appendChild(selection);
-        }
-    }
-//function randGen(n, len) {
-//    var val = Math.floor(Math.random()*Math.pow(10,(len-1)));
-//    document.getElementById("selection1").innerHTML = val
-//    }
-
-function newGame(){
-    showHide("choices");
-    randGen(3, 6);
-    gameIdGen();
-}
-    
-function displayChoice(val) {
-    document.getElementById("selection").innerHTML = val;
-    document.getElementById("selection").style.fontSize = "48px";
-    document.getElementById("selection").style.color = "blue";
-    }
-
-function gameIdGen(){
-    gameId = Math.floor(Math.random()*1000000);
-    document.getElementById("showGameId").innerHTML = "Game ID: " + gameId;
-    }
-
-function broadcastValue(id, value) {
-    
-}
-</script>
+<script src="https://messaging-public.realtime.co/js/2.1.0/ortc.js"></script>
+<script src="gameConnections.js"></script>
     
 <h2>Koikoi test</h2>
   
@@ -60,19 +14,32 @@ function broadcastValue(id, value) {
     New game</button>
 <button type="button"
         id="b.existing"
-        onclick="showHide('selections')">
+        onclick="showHide('choices'); showHide('joinBox')">
     Join existing game</button>
+<button type="button"
+        id="b.test"
+        onclick="testChannel()">
+    Test</button>
 </div>
     
-<div>
-<p id="showGameId">xx</p>
+<div id="gameInfo" style="display: none">
+    <p id="info_player"></p>
+    <p id="info_gameId"></p>
+    <p id="waiting">WAITING FOR PLAYER TO CONNECT...</p>
+</div>
+    
+<div id="joinBox" style="display: none">
+    <input type="text" id="idInput">
+    <button onclick="joinGame()">Join game</button>
     </div>
     
-<div id="selections">
-</div>
+<div id="inputBox" style="display: none">
+    <input type="text" id="msgInput">
+    <button onclick="sendInput(document.getElementById('msgInput').value, 'message'); document.getElementById('msgInput').value = null">Send</button>
+    </div>
     
 <div id="display">
-    <p id="selection"></p>
+    <p id="selection" style="color: blueviolet; font-size: 28pt"></p>
 </div>
     
 </body>

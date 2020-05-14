@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="https://messaging-public.realtime.co/js/2.1.0/ortc.js"></script>
+<script>
+ // Create Messaging client
+var client = RealtimeMessaging.createClient();
+ 
+// Set client properties
+client.setClusterUrl('http://ortc-developers.realtime.co/server/2.1/');
+ 
+client.onConnected = function (theClient) {
+    // client is connected, subscribe a channel
+    theClient.subscribe('testChannel', true, function (theClient, channel, msg) {
+        console.log("Received message:", msg);                   
+    });
+};
+ 
+client.onSubscribed = function (theClient, channel) {
+    // Subscribed to the channel 'channel');
+    // Send a message to the channel
+    theClient.send(channel, 'Hello World3');
+};
+ 
+// Establish the connection
+client.connect('36wTG2', 'BULy3Oc1gvls');
+</script>
+    
+<h2>Koikoi test</h2>
+ 
+</body>
+</html>
