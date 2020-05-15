@@ -100,12 +100,13 @@ function codeEntry() {
 }
 
 function joinGame() {
-    gameId = document.getElementById("idInput").value;
+    console.log("Joining game")
+    gameId = document.getElementById('graphic').contentDocument.getElementById("code_text").textContent;
     console.log(gameId);
     channel = "game_" + gameId;
     playerId = "2";
     createGame();
-    document.getElementById("waiting").innerHTML = "CONNECTING...";
+    //document.getElementById("waiting").innerHTML = "CONNECTING...";
 }
 
 function updateConnection(message) {
@@ -140,16 +141,4 @@ function showTable() {
         op.push(table[i].name);
     }
     displayMessage(op);
-}
-
-function captureCode() {
-    document.getElementById("graphic").addEventListener("keydown", logKey);
-}
-
-function logKey(e) {
-    console.log("keypress registered");
-    //var code = document.getElementById('graphic').contentDocument
-    //    .getElementById('code_text').textContent;
-    //code = code + e.key;
-    //console.log(code);    
 }
