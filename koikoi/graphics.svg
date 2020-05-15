@@ -357,7 +357,7 @@
        inkscape:label="#rect908"
        onmouseover="document.getElementById('newGame_button').style.fill = '#ffe000'"
        onmouseout="document.getElementById('newGame_button').style.fill = '#858585'"
-       onclick="window.parent.createDeck()"/>
+       onclick="window.parent.fadeOut('newGame_group')"/>
     <rect
        y="148.96605"
        x="245.51772"
