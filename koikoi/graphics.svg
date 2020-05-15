@@ -34,21 +34,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="231.37885"
-     inkscape:cy="128.85575"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="242.31126"
+     inkscape:cy="142.5287"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:snap-page="true"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:window-width="1280"
      inkscape:window-height="751"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-midpoints="true">
     <sodipodi:guide
@@ -92,6 +92,21 @@
        orientation="0,1"
        id="guide906"
        inkscape:locked="false" />
+    <sodipodi:guide
+       position="282.54764,123.26452"
+       orientation="1,0"
+       id="guide5941"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid5943" />
+    <sodipodi:guide
+       position="307.31665,131.7305"
+       orientation="1,0"
+       id="guide6037"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata109">
@@ -101,7 +116,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -112,7 +127,7 @@
      transform="translate(0,-85.333317)">
     <path
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#d96038;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64583325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       d="M 0,-80.220255 H 338.66666 V 296.99999 H 0 Z"
+       d="M -4.5058594e-6,-84.863112 H 338.66666 V 292.35713 H -4.5058594e-6 Z"
        id="path544"
        inkscape:connector-curvature="0" />
     <g
@@ -283,36 +298,136 @@
            id="path891" />
       </g>
     </g>
+    <text
+       id="gameId_text_outer"
+       y="161.097"
+       x="241.02904"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:11.11798px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0;"
+       xml:space="preserve"
+       inkscape:label="#text952-2"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:11.11798px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;stroke-width:0.26458332px;"
+         y="161.097"
+         x="242.88565"
+         id="gameId_text"
+         sodipodi:role="line">GAME ID: </tspan></text>
+    <text
+       id="connecting_text_outer"
+       y="177.14432"
+       x="241.07903"
+       style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.92724562px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:label="#text952-2"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.92720032px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.26458332px"
+         y="177.14432"
+         x="241.07903"
+         id="newGame_text-0-4"
+         sodipodi:role="line">WAITING FOR OTHER</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.92720032px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.26458332px"
+         y="187.08646"
+         x="241.07903"
+         sodipodi:role="line"
+         id="tspan3512">PLAYER TO CONNECT</tspan></text>
     <g
-       id="g889">
+       transform="translate(3.2493591e-7,-3.8860017e-6)"
+       id="sendCode_group"
+       inkscape:label="#joinGame_group-9"
+       style="opacity:0">
       <rect
-         y="148.96605"
-         x="245.51772"
-         height="16.303431"
-         width="61.79892"
-         id="rect910-4"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         y="148.96582"
+         x="291.01297"
+         height="16.303667"
+         width="16.303667"
+         id="rect910-4-2"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.233;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
       <rect
-         y="148.96605"
-         x="245.51772"
-         height="16.303431"
-         width="61.79892"
-         id="joinGame_button"
+         y="148.96648"
+         x="291.01364"
+         height="16.302999"
+         width="16.302999"
+         id="sendCode_button"
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#858585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          inkscape:label="#rect910" />
-      <text
-         id="joinGame_text"
-         y="159.95308"
-         x="251.42003"
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.92724514px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"
-         inkscape:label="#text952"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.92724514px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.26458332px"
-           y="159.95308"
-           x="251.42003"
-           id="tspan950"
-           sodipodi:role="line">JOIN GAME</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23299932;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="M 299.16473,152.1184 297.86344,153.41969 300.64098,156.19723 H 294.16514 V 158.03873 H 300.64098 L 297.86344,160.81627 299.16473,162.11755 304.16514,157.11799 Z"
+         id="path5945" />
     </g>
+    <g
+       transform="translate(3.2493591e-7,-3.8860017e-6)"
+       id="enterCode_group"
+       inkscape:label="#newGame_group-8"
+       style="opacity:0">
+      <rect
+         y="148.96605"
+         x="175.25214"
+         height="16.303431"
+         width="107.2955"
+         id="rect908-3-7"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         y="148.96605"
+         x="175.25214"
+         height="16.303431"
+         width="107.29551"
+         id="enterCode_button"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#858585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         inkscape:label="#rect908" />
+      <path
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:hidden;opacity:0;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="M 228.89989,152.11776 V 162.11776"
+         id="cursor"
+         inkscape:connector-curvature="0"
+         inkscape:label="#path5969">
+          <animate
+            attributeType="XML"
+            attributeName="opacity"
+            values="1;1;1;1;0;0;0;0"
+            dur="1.2s"
+            repeatCount="indefinite"/>
+        </path>
+      <text
+         id="code_text"
+         y="161.94084"
+         x="228.79808"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:13.4756813px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0"
+         xml:space="preserve"
+         inkscape:label="#text952-2"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:13.4756813px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332px;letter-spacing:5px"
+           y="161.94084"
+           x="228.79808"
+           id="newGame_text-7-2"
+           sodipodi:role="line">0000</tspan></text>
+      <text
+         id="enterCode_text"
+         y="159.955"
+         x="228.79538"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.92724562px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"
+         inkscape:label="#text952-2"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.92724562px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:0.26458332px"
+           y="159.955"
+           x="228.79538"
+           id="newGame_text-7"
+           sodipodi:role="line">ENTER GAME CODE</tspan></text>
+    </g>
+    <rect
+       y="148.96605"
+       x="175.25214"
+       height="16.303431"
+       width="107.29551"
+       id="enterCode_cap"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#858585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       inkscape:label="#rect908"
+       onmouseover="document.getElementById('enterCode_button').style.fill = '#ffe000'"
+       onmouseout="document.getElementById('enterCode_button').style.fill = '#858585'"
+       onclick="document.getElementById('enterCode_text').remove();
+                document.getElementById('cursor').style.visibility = 'visible';
+                document.getElementById('enterCode_cap').remove();
+                document.getElementById('enterCode_button').style.fill = '#858585';
+                document.getElementById('code_text').textContent = '';
+                document.getElementById('code_text').style.opacity = '1';
+                window.parent.captureCode()"/>
     <g
        id="newGame_group">
       <rect
@@ -344,25 +459,72 @@
            sodipodi:role="line">NEW GAME</tspan></text>
     </g>
     <rect
-       y="148.96605"
-       x="175.25214"
-       height="16.303431"
-       width="61.798908"
-       id="newGame_cap"
+       y="148.96648"
+       x="291.01364"
+       height="16.302999"
+       width="16.302999"
+       id="sendCode_cap"
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#858585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       inkscape:label="#rect908"
-       onmouseover="document.getElementById('newGame_button').style.fill = '#ffe000'"
-       onmouseout="document.getElementById('newGame_button').style.fill = '#858585'"
-       onclick="window.parent.fadeOut('newGame_group')"/>
+       inkscape:label="#rect910"
+       onmouseover="document.getElementById('sendCode_button').style.fill = '#ffe000'"
+       onmouseout="document.getElementById('sendCode_button').style.fill = '#858585'" />
+    <g
+       id="joinGame_group">
+      <rect
+         y="148.96605"
+         x="245.51772"
+         height="16.303431"
+         width="61.79892"
+         id="rect910-4"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <rect
+         y="148.96605"
+         x="245.51772"
+         height="16.303431"
+         width="61.79892"
+         id="joinGame_button"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#858585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         inkscape:label="#rect910" />
+      <text
+         id="joinGame_text"
+         y="159.95308"
+         x="251.42003"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.92724514px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"
+         inkscape:label="#text952"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:7.92724514px;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;stroke-width:0.26458332px"
+           y="159.95308"
+           x="251.42003"
+           id="tspan950"
+           sodipodi:role="line">JOIN GAME</tspan></text>
+    </g>
     <rect
        y="148.96605"
-       x="245.51772"
+       x="245.5177"
        height="16.303431"
        width="61.79892"
        id="joinGame_cap"
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#858585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        inkscape:label="#rect910-7"
        onmouseover="document.getElementById('joinGame_button').style.fill = '#ffe000'"
-       onmouseout="document.getElementById('joinGame_button').style.fill = '#858585'" />
+       onmouseout="document.getElementById('joinGame_button').style.fill = '#858585'"
+       onclick="document.getElementById('newGame_group').remove();            document.getElementById('joinGame_group').remove();
+                document.getElementById('newGame_cap').remove();
+                document.getElementById('joinGame_cap').remove();
+                window.parent.codeEntry()"/>
+    <rect
+       y="148.96605"
+       x="175.25212"
+       height="16.303431"
+       width="61.798916"
+       id="newGame_cap"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#858585;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4.23333311;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       inkscape:label="#rect908"
+       onmouseover="document.getElementById('newGame_button').style.fill = '#ffe000'"
+       onmouseout="document.getElementById('newGame_button').style.fill = '#858585'"
+       onclick="document.getElementById('newGame_group').remove();            document.getElementById('joinGame_group').remove();
+                document.getElementById('newGame_cap').remove();
+                document.getElementById('joinGame_cap').remove();
+                window.parent.newGame()" />
   </g>
 </svg>

@@ -4,7 +4,6 @@ var game;
 var playerId;
 
 function newGame() {
-    showHide("choices");
     gameIdGen();
     channel = "game_" + gameId;
     playerId = "1";
@@ -41,6 +40,17 @@ function createGame() {
             console.log("Connected to game " + gameId + ".")
             if(playerId == "2"){
                 sendInput("2_" + gameId, "connection");
+            }
+            if(playerId == "1"){
+                document.getElementById('graphic').contentDocument
+                        .getElementById('gameId_text')
+                        .textContent = "GAME ID: " + gameId;
+                document.getElementById('graphic').contentDocument
+                        .getElementById('gameId_text_outer').style
+                        .opacity = "1";
+                document.getElementById('graphic').contentDocument
+                        .getElementById('connecting_text_outer').style
+                        .opacity = "1";
             }
         }
         setupGame();
@@ -80,8 +90,16 @@ function showGameInfo() {
     showHide("gameInfo");
 }
 
+function codeEntry() {
+    document.getElementById('graphic').contentDocument
+            .getElementById('enterCode_group')
+            .style.opacity = "1";
+    document.getElementById('graphic').contentDocument
+            .getElementById('sendCode_group')
+            .style.opacity = "1";
+}
+
 function joinGame() {
-    showHide("joinBox");
     gameId = document.getElementById("idInput").value;
     console.log(gameId);
     channel = "game_" + gameId;
@@ -121,4 +139,16 @@ function showTable() {
         op.push(table[i].name);
     }
     displayMessage(op);
+}
+
+function captureCode() {
+    document.getElementById("graphic").addEventListener("keydown", logKey);
+}
+
+function logKey(e) {
+    console.log("keypress registered");
+    //var code = document.getElementById('graphic').contentDocument
+    //    .getElementById('code_text').textContent;
+    //code = code + e.key;
+    //console.log(code);    
 }
