@@ -6,14 +6,20 @@
     <link rel="stylesheet" href="main.css">
 </head>
     
-<body style="background-color:#858585;">
+<body id="body1" style="background-color:#858585;">
 
   <script src="https://messaging-public.realtime.co/js/2.1.0/ortc.js"></script>
   <script src="gameConnections.js"></script>
   <script src="deck.js"></script>
   <script src="graphics.js"></script>
-  
-<object class="figure" data="graphics.svg" type="image/svg+xml" id="graphic"></object>    
+    
+<div id="intro"> 
+<object class="figure" data="graphics.svg" type="image/svg+xml" id="graphic"></object> 
+    </div>
+    
+<div id="game" style="display: none"> 
+<object class="figure" data="game.svg" type="image/svg+xml" id="game_graphic"></object> 
+    </div>
     
 <h2>Koikoi test</h2>
   

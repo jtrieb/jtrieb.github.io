@@ -11,7 +11,16 @@ function newGame() {
 }
 
 function setupGame() {
-    showGameInfo();
+    fadeOutIntro();
+    setTimeout(function(){setupGame2()}, 1000);
+}
+
+function setupGame2() {
+    console.log("setupGame2: running");
+    showHide("intro");
+    showHide("game");
+    document.getElementById("body1").style.backgroundColor = "#d96038";
+    setTimeout(function(){fadeInGame()}, 2000);
 }
 
 function gameIdGen(){
@@ -53,7 +62,6 @@ function createGame() {
                         .opacity = "1";
             }
         }
-        setupGame();
     }
 }
 
@@ -115,18 +123,17 @@ function updateConnection(message) {
             document.getElementById("waiting").innerHTML = "Player 2 connected.";
             //showHide("inputBox");
             sendInput("1_" + gameId, "connection");
-            fadeOut();
             deck = createDeck();
             deck = shuffle(deck);
             sendInput(deck, "deck");
             deal();
-            showTable();
+            setupGame();
         }
     }
     if(playerId == "2") {
         if(message == "1_" + gameId) {
             document.getElementById("waiting").innerHTML = "Player 1 connected."
-            fadeOut();
+            setupGame();
         }
     }
 }
