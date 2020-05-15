@@ -1,5 +1,3 @@
-//var graphic = document.getElementById('graphic').contentDocument;
-
 function fadeOut(){
         var cover = document.getElementById('graphic').contentDocument.getElementById("page_cover");
         cover.style.visibility = "visible";
