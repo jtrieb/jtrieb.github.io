@@ -133,6 +133,7 @@ function displayMessage(message) {
     document.getElementById("selection").innerHTML = message;
 }
 
+
 function showTable() {
     op = [];
     for (var i = 0; i < table.length; i++) {
