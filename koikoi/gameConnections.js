@@ -15,7 +15,7 @@ function setupGame() {
 }
 
 function gameIdGen(){
-    gameId = Math.floor(Math.random()*10000);
+    gameId = Math.floor(Math.random()*1000000);
 }
 
 function showHide(id) {
@@ -115,6 +115,7 @@ function updateConnection(message) {
             document.getElementById("waiting").innerHTML = "Player 2 connected.";
             //showHide("inputBox");
             sendInput("1_" + gameId, "connection");
+            fadeOut();
             deck = createDeck();
             deck = shuffle(deck);
             sendInput(deck, "deck");
@@ -125,7 +126,7 @@ function updateConnection(message) {
     if(playerId == "2") {
         if(message == "1_" + gameId) {
             document.getElementById("waiting").innerHTML = "Player 1 connected."
-            //showHide("inputBox");
+            fadeOut();
         }
     }
 }
