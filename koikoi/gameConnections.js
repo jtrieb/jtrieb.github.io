@@ -16,7 +16,7 @@ function setupGame() {
 }
 
 function gameIdGen(){
-    gameId = Math.floor(Math.random()*1000000);
+    gameId = Math.floor(Math.random()*10000);
 }
 
 function showHide(id) {
@@ -54,6 +54,11 @@ function readMessage(message) {
         if(message.type == "connection") {
             updateConnection(message.content);
         }
+        if (message.type == "deck") {
+            deck = message.content;
+            deal();
+            showTable();
+        }
         if(message.type == "message") {
             displayMessage(message.content);
         }
@@ -88,19 +93,32 @@ function joinGame() {
 function updateConnection(message) {
     if(playerId == "1") {
         if(message == "2_" + gameId) {
-            document.getElementById("waiting").innerHTML = "Player 2 connected."
-            showHide("inputBox");
+            document.getElementById("waiting").innerHTML = "Player 2 connected.";
+            //showHide("inputBox");
             sendInput("1_" + gameId, "connection");
+            deck = createDeck();
+            deck = shuffle(deck);
+            sendInput(deck, "deck");
+            deal();
+            showTable();
         }
     }
     if(playerId == "2") {
         if(message == "1_" + gameId) {
             document.getElementById("waiting").innerHTML = "Player 1 connected."
-            showHide("inputBox");
+            //showHide("inputBox");
         }
     }
 }
 
 function displayMessage(message) {
     document.getElementById("selection").innerHTML = message;
+}
+
+function showTable() {
+    op = [];
+    for (var i = 0; i < table.length; i++) {
+        op.push(table[i].name);
+    }
+    displayMessage(op);
 }
