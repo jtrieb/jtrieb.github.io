@@ -130,8 +130,8 @@ function updateConnection(message) {
             setupGame();
         }
     }
-    if(playerId == "2") {
-        if(message == "1_" + gameId) {
+    if (playerId == "2") {
+        if (message == "1_" + gameId) {
             document.getElementById("waiting").innerHTML = "Player 1 connected."
             setupGame();
         }
