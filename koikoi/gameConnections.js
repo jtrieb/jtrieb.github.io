@@ -12,7 +12,6 @@ function newGame() {
 
 function setupGame() {
     fadeOutIntro();
-    setTimeout(function(){setupGame2()}, 1000);
 }
 
 function setupGame2() {

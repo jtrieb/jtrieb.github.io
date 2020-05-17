@@ -1,12 +1,22 @@
-function fadeOutIntro(){
-        var cover = document.getElementById('graphic').contentDocument.getElementById("page_cover");
-        cover.style.visibility = "visible";
-        console.log("Fading out");
-        document.getElementById('graphic').contentDocument.getElementById('cover_fadein').beginElement();
-    }
+function fadeOutIntro() {
+    showHide("cover_div");
+    setTimeout(function(){fadeOutIntro2()}, 500);
+}
 
-function fadeInGame(){
-    var cover = document.getElementById('game_graphic').contentDocument.getElementById("page_cover");
-    document.getElementById('game_graphic').contentDocument.getElementById('cover_fadeout').beginElement();
-    cover.style.visibility = "hidden";
+function fadeOutIntro2(){
+    var anim = document.getElementById("cover").contentDocument.getElementById("cover_fadein");
+    console.log(anim);
+    anim.beginElement();
+    setTimeout(function(){setupGame2()}, 1000);
+}
+
+function fadeInGame() {
+    var anim = document.getElementById("cover").contentDocument.getElementById("cover_fadeout");
+    anim.beginElement();
+    console.log(anim);
+    setTimeout(function(){fadeInGame2()}, 1000);
+}
+
+function fadeInGame2(){
+    showHide("cover_div");
 }
