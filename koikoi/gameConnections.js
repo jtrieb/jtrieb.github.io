@@ -19,19 +19,29 @@ function setupGame2() {
     showHide("intro");
     showHide("game");
     document.getElementById("body1").style.backgroundColor = "#d96038";
+    if (playerId == 1){
+        console.log("Dealing player 1's hand.");
+        console.log(hand1);
+        dealHand(hand1);
+    } else {
+        console.log("Dealing player 2's hand.");
+        console.log(hand2);
+        dealHand(hand2);
+    }
+    dealTable(table);
     setTimeout(function(){fadeInGame()}, 2000);
 }
 
 function gameIdGen(){
-    gameId = Math.floor(Math.random()*1000000);
+    gameId = Math.floor(Math.random()*1000);
 }
 
 function showHide(id) {
     var e = document.getElementById(id)
-    if (e.style.display === "none") {
-        e.style.display = "block";
+    if (e.style.visibility === "hidden") {
+        e.style.visibility = "visible";
     } else {
-        e.style.display = "none";
+        e.style.visibility = "hidden";
     }
 }
 
@@ -119,19 +129,19 @@ function joinGame() {
 function updateConnection(message) {
     if(playerId == "1") {
         if(message == "2_" + gameId) {
-            document.getElementById("waiting").innerHTML = "Player 2 connected.";
+            //document.getElementById("waiting").innerHTML = "Player 2 connected.";
             //showHide("inputBox");
-            sendInput("1_" + gameId, "connection");
             deck = createDeck();
             deck = shuffle(deck);
             sendInput(deck, "deck");
+            sendInput("1_" + gameId, "connection");
             deal();
             setupGame();
         }
     }
     if (playerId == "2") {
         if (message == "1_" + gameId) {
-            document.getElementById("waiting").innerHTML = "Player 1 connected."
+            //document.getElementById("waiting").innerHTML = "Player 1 connected.";
             setupGame();
         }
     }
@@ -147,5 +157,5 @@ function showTable() {
     for (var i = 0; i < table.length; i++) {
         op.push(table[i].name);
     }
-    displayMessage(op);
+    //displayMessage(op);
 }

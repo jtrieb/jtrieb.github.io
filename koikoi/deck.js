@@ -70,3 +70,46 @@ function deal() {
     }    
     deck = deck.slice(24, deck.length);
 }
+
+function dealHand(hand){
+    for(var i = 0; i < hand.length; i++){
+        var cardId = "C" + hand[i].id;
+        addCard(cardId);
+        var card = document.getElementById("game_graphic").contentDocument.getElementById(cardId);
+        setCardPos(card, 10 + (16 * i), -10);
+        card.setAttribute("onmouseover", "view(this.id)");
+    }
+}
+
+function dealTable(table){
+    for(var i = 0; i < table.length; i++){
+        var cardId = "C" + table[i].id;
+        addCard(cardId);
+        var card = document.getElementById("game_graphic").contentDocument.getElementById(cardId);
+        //if (i < 4){
+        //    x = tableX[i];
+        //    y = tableY[0];
+        //} else {
+        //    x = tableX[i-4];
+        //    y = tableY[1];
+        //}
+        x = tableX[i];
+        y = tableY;
+        setCardPos(card, x, y);
+    }
+}
+
+function addCard(cardId, parentId="game_graphic"){
+    console.log(cardId);
+    var card = document.getElementById("cards_graphic").contentDocument.getElementById(cardId);
+    console.log(card);
+    card.removeAttribute("transform");
+    var parent = document.getElementById("game_graphic").contentDocument.getElementById("layer1");
+    parent.appendChild(card);
+}
+
+function setCardPos(card, x, y){
+    console.log("Moving card");
+    console.log(card);
+    card.setAttribute("transform", "translate(" + x + ", " + y + ")");
+}
